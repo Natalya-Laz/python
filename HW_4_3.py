@@ -7,8 +7,6 @@ for i in range(10):
     n = int(input())
     list1.append(n)
 print(f"Исходная последовательность: {list1}")
-
-# def fil(list2):
 res = []
 for i in range(len(list1)):
     count = 0
@@ -18,5 +16,3 @@ for i in range(len(list1)):
     if count == 1:
         res.append(list1[i])
 print(f"Итоговая последовательность с неповторяющимися элементами: {res}")
-# array = [4, 5, 3, 3, 4, 1, 2]
-# fil(array)
