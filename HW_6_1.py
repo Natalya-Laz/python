@@ -1,20 +1,18 @@
-# # 2. Для натурального n создать словарь индекс-значение, состоящий из элементов
-# последовательности 3n + 1.
-# *Пример:*
-# - Для n = 6: {1: 4, 2: 7, 3: 10, 4: 13, 5: 16, 6: 19}
+#  Задайте последовательность чисел. Напишите программу, которая выведет список неповторяющихся элементов исходной последовательности.
+# arr = [1, 5, 2, 3, 4, 2, 6, 7, 4, 3, 2, 8, 9, 2, 1,
+#        4, 5, 6, 7, 3, 2, 11, 4, 6, 2, 3, 4, 16, 7, 8, 24]
+# res = []
+# for i in range(len(arr)):
+#     count = 0
+#     for j in range(len(arr)):
+#         if arr[i] == arr[j]:
+#             count += 1
+#     if count == 1:
+#         res.append(arr[i])
+# print(arr)
+# print(res)
 
-dictionary = {}
-i = 1
-n = int(input("Введите число = "))
-for i in range(1, n+1):
-    index = i
-    value = 3 * i + 1
-    dictionary[index] = value
-    i += 1
-print(f"{dictionary} ", end=" ")
-
-dictionary = {}
-i = 1
-n = [int(input("Введите число = ")) for i in range(1, n+1)]
-value =[int (3 * i + 1), dictionary[index] = value, i += 1]
-print(f"{dictionary} ", end=" ")
+arr = [1, 5, 2, 3, 4, 2, 6, 7, 4, 3, 2, 8, 9, 2, 1,
+       4, 5, 6, 7, 3, 2, 11, 4, 6, 2, 3, 4, 16, 7, 8, 24]
+print(arr)
+print(list(filter(lambda x: arr.count(x) == 1, arr)))
